@@ -1,0 +1,58 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model realtime_loginrecord {
+  id         Int      @id @default(autoincrement())
+  created    DateTime @default(now())
+  name       String
+  playerId   String
+  userId     String
+  ip         String
+  ping       Int?
+  location_x Int
+  location_y Int
+  level      Int
+}
+
+model realtime_metrics {
+  id               Int      @id @default(autoincrement())
+  created_at       DateTime @default(now())
+  uptime           Int
+  serverfps        Int
+  maxplayernum     Int
+  serverframetime  Int
+  currentplayernum Int
+}
+
+model realtime_playersonline {
+  id          Int      @id @default(autoincrement())
+  created_at  DateTime @default(now())
+  player_data Json
+}
+
+model realtime_systeminfo {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+  cpu_temp   Int
+  cpu_use    Int
+  ram_use    Int
+  swap_use   Int
+}
+
+model realtime_logsrecord {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+  logs_data  String
+}
