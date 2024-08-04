@@ -29,16 +29,16 @@ pnpm add -D @types/express
 
 ## Prisma
 ```
-npm install @prisma/client
-npm install prisma --save-dev
-npx prisma init
-npx prisma migrate dev
-npx prisma migrate reset
-npx prisma generate
+pnpm add @prisma/client
+pnpm add -D prisma
+pnpx prisma init
+pnpx prisma migrate dev
+pnpx prisma migrate reset
+pnpx prisma generate
 
-npx prisma init --datasource-provider sqlite
-npx prisma migrate dev --name init
-npx prisma migrate dev --create-only
+pnpx prisma init --datasource-provider sqlite
+pnpx prisma migrate dev --name init
+pnpx prisma migrate dev --create-only
 
 ```
 
