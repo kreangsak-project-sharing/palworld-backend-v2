@@ -1,7 +1,6 @@
 # palworld-backend-v2
 
-# Command
-## Nodejs Command
+## Nodejs
 ```
 pnpm init
 pnpm add -D typescript ts-node
