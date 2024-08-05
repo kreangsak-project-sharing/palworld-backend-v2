@@ -137,7 +137,7 @@ export async function updatePlayerOnline() {
         update: { player_data: [] },
         create: { id: 1, player_data: [] },
       });
-      console.log("players: undefined");
+      // console.log("players: undefined");
       players = dataAPI.length;
       return;
     }
