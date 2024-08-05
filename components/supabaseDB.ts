@@ -89,7 +89,6 @@ export async function updateMetrics() {
 
 //
 // updatePlayerOnline
-
 type PlayerAPIType = {
   name: string;
   playerId: string;
