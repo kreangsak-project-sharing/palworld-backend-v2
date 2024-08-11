@@ -2,6 +2,8 @@
 
 ## Nodejs
 ```
+// Install pnpm
+npm install -g pnpm
 // updated pnpm to latest version
 npx pnpm i -g pnpm@latest
 ```
