@@ -2,6 +2,10 @@
 
 ## Nodejs
 ```
+#updated pnpm to latest version
+npx pnpm i -g pnpm@latest
+```
+```
 pnpm init
 pnpm add -D typescript ts-node
 pnpm exec tsc --init
@@ -9,7 +13,6 @@ pnpm exec tsc --init
 pnpm add dotenv express nodemon
 pnpm add -D @types/express
 ```
-
 ## package.json
 ```
 "scripts": {
