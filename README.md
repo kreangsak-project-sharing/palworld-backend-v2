@@ -2,7 +2,7 @@
 
 ## Nodejs
 ```
-#updated pnpm to latest version
+// updated pnpm to latest version
 npx pnpm i -g pnpm@latest
 ```
 ```
