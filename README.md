@@ -19,7 +19,7 @@ pnpm add -D @types/express
 ```
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc",
+    "build": "pnpm exec tsc",
     "start": "node ./dist/index.js",
     "dev": "nodemon index.ts"
   },
